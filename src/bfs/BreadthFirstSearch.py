@@ -3,7 +3,6 @@ Do breadth-first search of a graph
 """
 
 from collections import deque
-import random
 
 def bfs_visited(ugraph, start_node):
     """ Takes the undirected graph ugraph and the node start_node and returns the set consisting of all nodes that are visited by a breadth-first search that starts at start_node. """

@@ -152,12 +152,12 @@ def fast_targeted_order(ugraph):
 
         if degree > max_in_degree:
             max_in_degree = degree
-        if not degree_sets.has_key(degree):
+        if degree not in degree_sets:
             degree_sets[degree] = set()
         degree_sets[degree].add(node_index)
 
     for degree in range(max_in_degree):
-        if not degree_sets.has_key(degree):
+        if degree not in degree_sets:
             degree_sets[degree] = set()
 
     for in_degree in reversed(range(max_in_degree + 1)):
